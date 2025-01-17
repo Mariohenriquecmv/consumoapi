@@ -12,7 +12,7 @@
         <h1>Minha Loja Virtual</h1>
       </div>
       <div class="barra-pesquisa">
-        <input type="text" placeholder="Pesquisar itens..." />
+        <input type="text" placeholder="Pesquisar itens..." id="pesquisar"/>
         <button>Buscar</button>
       </div>
       <button class="botao-adicionar-produto" onclick="abrirFormulario()">
@@ -31,10 +31,10 @@
         <span class="botao-fechar" onclick="fecharFormulario()">&times;</span>
         <h2>Adicionar Produto</h2>
           <label for="nomeProduto">Nome do Produto:</label>
-          <input type="text" id="nomeProduto" name="nomeProduto" required />
+          <input type="text" id="nomeProduto" name="nomeProduto" required /> <!-- required = campo obrigatorio a ser preenchido - colocar no meu codigo-->
 
           <label for="precoProduto">Preço:</label>
-          <input type="text" id="precoProduto" name="precoProduto" required />
+          <input type="text" id="precoProduto" name="precoProduto" /> <!-- Removi o required para forçar o erro-->
 
           <label for="imagemProduto">URL da Imagem:</label>
           <input type="url" id="imagemProduto" name="imagemProduto" required />
