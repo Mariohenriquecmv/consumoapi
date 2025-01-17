@@ -29,7 +29,7 @@ async function carregarProdutos(filtro=''){ // definir por padrão filtro vazio
   main.innerHTML = ''
   produtosFiltrados.forEach(produto => {
       const estruturaHtmlProduto = `
-      <section class="cartao-item">z
+      <section class="cartao-item">
           <img src="${produto.imagem}" alt="Item 1" />
           <h3>${produto.nome}</h3>
           <p class="preco-item">R$ ${produto.preco}</p>
